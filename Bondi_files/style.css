@@ -1,0 +1,156 @@
+
+ :root{
+   --dark-color:#19283f;
+   --green-color: #33d1cc
+ }
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color:var(--green-color)
+}
+
+.search{
+    border-left: 1px solid var(--green-color);
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.landing{
+    background-color: var(--dark-color);
+    min-height: 100vh;
+}
+
+.main-title::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder{
+    height: 200px;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .namber{
+    font-size: 12rem;
+    color: #eff7fa;
+}
+.features .icon-holder .icon{
+    font-size: 70px;
+    color: var(--green-color);
+}
+
+.our-work{
+    background-color: #eff7fa;
+}
+
+ ul .nav .nav-link:hover{
+    color: blue;
+}
+
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1ccad;
+    width: calc(100% - 10px);
+    height:calc(100% - 10px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: .3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before{
+    transform: translateX(0);
+    cursor: pointer;
+}
+
+.our-team{
+    background-color:#eff7fa;
+}
+
+.kareem{
+    background-color: var(--green-color);
+}
+.project{
+    background-color: var(--dark-color);
+}
+
+.Subscribe{
+    background-color: #ffc400;
+}
+.Subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.Subscribe input[type="text"]:focus{
+    outline: none;
+}
+
+.Subscribe ::placeholder{
+    color: white;
+}
+
+button{
+    background-color: var(--dark-color);
+    color: #ffc400;
+}
+
+.footer{
+    background-color: var(--dark-color);
+}
+
+.facebook{
+    background-color: #1877f2;
+}
+
+.twitter{
+   background-color: #1da1f2;
+}
+
+.linkedin{
+    background-color: #0077b5;
+}
+
+.youtube{
+   background-color: #ff0000;
+}
